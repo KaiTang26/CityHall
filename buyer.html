@@ -11,19 +11,40 @@
 
     <!-- NAIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <a class="navbar-brand" href="#"> <img src="./img/logo.jpg" alt=""> </a>
+
+      <!-- LOGO -->
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.jpg" alt="fishcloud">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- NAV ITEM -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <h3 class="nav-link" href="#">Home <span class="sr-only">(current)</span></h3>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile</a>
+            <h3 class="nav-link" href="#">Profile</h3>
+          </li>
+          <li class="nav-item">
+            <img class="gordon" src="./img/Gordon.png" alt="buyer photo">
           </li>
         </ul>
+        <!-- NAV ITEM END -->
+
+        <!-- BUYER IMAGE -->
+        <!-- <ul class="navbar-nav" id="buyer">
+          <div>
+            <li class="nav-item">
+              <img class="gordon" src="./img/Gordon.png" alt="buyer photo">
+            </li>
+          </div>
+        </ul> -->
+        <!-- BUYER IMAGE END -->
+
       </div>
     </nav>
     <!-- NAVIGATION BAR END -->
@@ -41,19 +62,23 @@
             <div class="toggle__option">week</div>
             <div class="toggle__option toggle__option--selected">month</div>
           </div>
+          <div class="port">
+            <h5 style="text-align:center">Port 51</h5>
+            <h7>6 AM - 1 PM</h7>
+          </div>
           <div class="current-month">February 2018</div>
         </div>
 
         <!-- CALENDAR DATE -->
         <div class="calendar">
           <div class="calendar__header">
+            <div>sun</div>
             <div>mon</div>
             <div>tue</div>
             <div>wed</div>
             <div>thu</div>
             <div>fri</div>
             <div>sat</div>
-            <div>sun</div>
           </div>
           <div class="calendar__week">
             <div class="calendar__day day">28</div>
@@ -74,7 +99,7 @@
             <div class="calendar__day day">10</div>
           </div>
           <div class="calendar__week">
-            <div class="calendar__day day">11</div>
+            <div class="calendar__day day" ><strong>11</strong></div>
             <div class="calendar__day day">12</div>
             <div class="calendar__day day">13</div>
             <div class="calendar__day day">14</div>
@@ -305,7 +330,7 @@
 
                 </tbody>
               </table>
-<button type="submit" class="btn btn-primary button-position">Submit</button>
+              <button type="submit" class="btn btn-primary button-position">Submit</button>
               </div>
 
             </div>
@@ -317,15 +342,10 @@
       </div>
       <!-- STORE SIZE END -->
 
-
     </div>
     <!-- MAIN ROW END -->
 
-
-
-
     <!-- BOOTSTRAP CDN -->
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   </body>
