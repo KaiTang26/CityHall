@@ -1,4 +1,7 @@
 /* Split the screen in half */
+.selectFish{
+          font-size: 20px;
+}
 .split1 {
  height: 100%;
  width: 70%;
@@ -9,6 +12,25 @@
  padding-top: 20px;
 }
 
+        
+        .send.selected {
+          background: #00c09e;
+          cursor: pointer;
+        }
+.send{
+          height: 45px;
+	  width: 157px;
+          margin: 0 7px;
+          padding: 5px 0;
+          font-weight: 700;
+          font-size: 15px;
+          letter-spacing: 2px;
+          color: #fff;
+          border: 0;
+          border-radius: 2px;
+          text-transform: uppercase;
+          outline: 0;
+}
 .split2 {
   height: 100%;
   width: 30%;
@@ -48,15 +70,32 @@
 .fish {
   height: 70px;
   font-size:12px;
-}
+	display: inline;
+          margin: 30px;
+          width: 157px;
+	  border: 10px;
+float: left;
 
+}
+.fishImg{
+	max-width:100%;
+	max-height:100%;
+}
+.fishList{
+position: relative;
+          margin: 50px auto;
+          width: 710px;
+          padding: 0;
+          list-style: none;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 900;
+          color: #555;
+}
 .threatened {
-  box-shadow: 0 0 0 4px yellow;
+  box-shadow: 0 0 0 4px red;
 }
 
-.extirpated {
-  box-shadow: 0 0 0 4px black;
-}
 
 .endangered {
   box-shadow: 0 0 0 4px red;
