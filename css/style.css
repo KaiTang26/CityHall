@@ -1,3 +1,4 @@
+/* Header*/
 .headerPic{
 	height: 80px;
 	width: auto;
@@ -30,6 +31,14 @@
 	color: white;	
 	padding: 15px 20px;
 }
+.top{
+	top: 0;
+	height: 100px;
+    background-color: #156e96;
+clear: both;
+
+}
+/*Body*/
 .selectFish{
           font-size: 20px;
 }
@@ -50,17 +59,29 @@
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
-  padding-top: 20px;
 top: auto;
  }
-.top{
-	top: 0;
-	height: 100px;
-    background-color: #156e96;
-clear: both;
-
+.haulPic{
+	display: block;
+	margin: auto;	
+	height: auto;
+	width: 100%;
+	
 }
-        
+.geoLocate{
+	text-align:center;	
+}	
+.submitTag{
+	display: block;
+	margin: auto;
+	height:20%;
+  	width: 50%;
+	font-size: 45px; 
+	font-weight: bold;
+	color: white;
+	background-color: #00c09e;
+	border-radius: 20%;
+}
 .send.selected {
           background: #00c09e;
           cursor: pointer;
@@ -83,7 +104,6 @@ clear: both;
 /* Control the right side */
 .right {
  right: 0;
- background-color: grey;
 }
 
 /* If you want the content centered horizontally and vertically 
@@ -102,18 +122,25 @@ clear: both;
 } */
 
 .fish {
- 	height: 70px;
+ 	height: auto;
   	font-size:12px;
-	display: inline;
-          margin: 30px;
-          width: 157px;
-	  border: 10px;
-	float: left;/**/
+	display: inline-block;
+        margin: 30px;
+        width: auto;
+	float: left;
 
 }
 .fishImg{
-	max-width:100%;
-	max-height:100%;
+
+	height: 70px;
+	width: auto;
+	border: 10px;
+}
+.caption {
+    display: block;
+}
+.quantity{
+	width: 50px;
 }
 .fishList{
 position: relative;
@@ -137,9 +164,7 @@ position: relative;
 .normal{
   box-shadow: 0 0 0 4px #00c09e;
 }
-.rowFish{
-	
-}
+
         /* button 
         
         button {
@@ -156,6 +181,7 @@ position: relative;
         }*/
         
         button.select {
+	border: 0;
     /*      float: left;
          
           cursor: pointer;
@@ -183,6 +209,7 @@ position: relative;
         
         
         button.select.selected:after {
+
           transform:         translate(0,-38px);
           -o-transform:      translate(0,-38px);
           -ms-transform:     translate(0,-38px);
@@ -218,51 +245,11 @@ position: relative;
 
         
         body {
-          background: #f2f2f2;
+
           font-family: Lato;
           -webkit-font-smoothing: antialiased;
         }
-        
-  /*      div {
-          position: relative;
-          margin: 50px auto;
-          width: 710px;
-          padding: 0;
-          list-style: none;
-          text-align: center;
-          text-transform: uppercase;
-          font-weight: 900;
-          color: #555;
-	 
-        }*/
 
-        
-        @keyframes unselected {
-          0% { box-shadow: 0 0 0 4px #00c09e; }
-          50% { transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
-        }
-        @-o-keyframes unselected {
-          0% { box-shadow: 0 0 0 4px #00c09e; }
-          50% { -o-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
-        }
-        @-ms-keyframes unselected {
-          0% { box-shadow: 0 0 0 4px #00c09e; }
-          50% { width: 45%; height: 45%; opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
-        }
-        @-moz-transition unselected {
-          0% { box-shadow: 0 0 0 4px #00c09e; }
-          50% { -moz-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
-        }
-        @-webkit-keyframes unselected {
-          0% { box-shadow: 0 0 0 4px #00c09e; }
-          50% { -webkit-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
-        }
-        
         li:before {
           content: "\2714";
           display: block;
@@ -279,75 +266,14 @@ position: relative;
           font-size: 16px;
           z-index: 10;
           opacity: 0;
-  /*        transition:         0.3s linear;
-          -o-transition:      0.3s linear;
-          -ms-transition:     0.3s linear;
-          -moz-transition:    0.3s linear;
-          -webkit-transition: 0.3s linear;*/
+ 
           -o-user-select:      none;
           -moz-user-select:    none;
           -webkit-user-select: none;
           cursor: pointer;
         }
 
-  
-        
-        /* img selection */
-        
-        ..selected {
-          box-shadow: 0 0 0 4px #00c09e;
-
-        }
-	/* Style the tab buttons */
-.tablink {
-
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-	
+  .card-body{
+  border-bottom: 1px solid #e1e1e1;
 }
 
-/* Change background color of buttons on hover */
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Set default styles for tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
-}
-
-        /*
-        @keyframes selected {
-          0% { border-color: #fff; }
-          50% { transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
-        }
-        @-o-keyframes selected {
-          0% { box-shadow: 0 0 0 4px #fff; }
-          50% { -o-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
-        }
-        @-ms-keyframes selected {
-          0% { box-shadow: 0 0 0 4px #fff; }
-          50% { width: 45%; height: 45%; opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
-        }
-        @-moz-transition selected {
-          0% { box-shadow: 0 0 0 4px #fff; }
-          50% { -moz-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
-        }
-        @-webkit-keyframes selected {
-          0% { box-shadow: 0 0 0 4px #fff; }
-          50% { -webkit-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
-          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
-        }
-        */
