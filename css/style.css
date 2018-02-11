@@ -1,45 +1,79 @@
-/* Split the screen in half */
+.headerPic{
+	height: 80px;
+	width: auto;
+	float: left;
+	border-radius: 100%;
+}
+#title{
+	
+	float: left;
+	padding-left: 5%;
+	color: white;	
+	font-size: 40px;	
+}
+
+#fisherfolk{
+	height: 100px;
+	width: auto;
+	float: right;
+	padding-right: 8%;
+}
+#fisherfolk img{
+	float: left;
+	margin-left: 20px;
+	margin-top: 12px;
+
+}
+#fisherfolk h2{
+	float: left;
+	text-align: auto;
+	color: white;	
+	padding: 15px 20px;
+}
 .selectFish{
           font-size: 20px;
 }
 .split1 {
- height: 100%;
+ height: 90%;
  width: 70%;
  position: fixed;
  z-index: 1;
- top: 0;
+ top: auto;
  overflow-x: hidden;
  padding-top: 20px;
+ overflow-y: auto;
 }
 
+.split2 {
+  height: 90%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+top: auto;
+ }
+.top{
+	top: 0;
+	height: 100px;
+    background-color: #156e96;
+clear: both;
+
+}
         
-        .send.selected {
+.send.selected {
           background: #00c09e;
           cursor: pointer;
         }
 .send{
-          height: 45px;
-	  width: 157px;
-          margin: 0 7px;
-          padding: 5px 0;
-          font-weight: 700;
-          font-size: 15px;
-          letter-spacing: 2px;
-          color: #fff;
-          border: 0;
-          border-radius: 2px;
-          text-transform: uppercase;
-          outline: 0;
+	height: 45px;
+	width: 157px;
+        margin: auto;
+        font-weight: 700;
+        font-size: 15px;
+        color: #fff;
 }
-.split2 {
-  height: 100%;
-  width: 30%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
- }
+
 /* Control the left side */
 .left {
  left: 0;
@@ -52,29 +86,29 @@
  background-color: grey;
 }
 
-/* If you want the content centered horizontally and vertically */
+/* If you want the content centered horizontally and vertically 
 .centered {
- position: absolute;
+ position: relative;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
  text-align: center;
 }
 
-/* Style the image inside the centered container, if needed */
+/* Style the image inside the centered container, if needed 
 .centered img {
  width: 150px;
  border-radius: 50%;
-} 
+} */
 
 .fish {
-  height: 70px;
-  font-size:12px;
+ 	height: 70px;
+  	font-size:12px;
 	display: inline;
           margin: 30px;
           width: 157px;
 	  border: 10px;
-float: left;
+	float: left;/**/
 
 }
 .fishImg{
@@ -106,3 +140,214 @@ position: relative;
 .rowFish{
 	
 }
+        /* button 
+        
+        button {
+
+          padding: 5px 0;
+          font-weight: 700;
+          font-size: 15px;
+          letter-spacing: 2px;
+          border: 0;
+          border-radius: 2px;
+          text-transform: uppercase;
+          outline: 0;
+		
+        }*/
+        
+        button.select {
+    /*      float: left;
+         
+          cursor: pointer;
+          width: 150px;/**/
+        }
+        
+        button.select:before, button.select:after {
+  /*        position: absolute;
+          display: block;
+          content:  'select all';
+          width: 150px;
+          text-align: center;
+          transition:         0.1s linear;
+          -o-transition:      0.1s linear;
+          -ms-transition:     0.1s linear;
+          -moz-transition:    0.1s linear;
+          -webkit-transition: 0.1s linear;/**/
+        }
+        
+        button.select:after {
+          content:  'unselect';
+          margin-top: 20px;
+          opacity: 0;
+        }
+        
+        
+        button.select.selected:after {
+          transform:         translate(0,-38px);
+          -o-transform:      translate(0,-38px);
+          -ms-transform:     translate(0,-38px);
+          -moz-transform:    translate(0,-38px);
+          -webkit-transform: translate(0,-38px);
+          opacity: 1;
+        }
+        
+
+        
+        .send:after {
+          position: auto;ul
+          content:  attr(data-counter);
+          padding: 5px 8px;
+          margin: -29px 0 0 0px;
+          line-height: 100%;
+          border: 2px white solid;
+          border-radius: 60px;
+	  color: white;
+        
+          transition:         0.1s linear;
+          -o-transition:      0.1s linear;
+          -ms-transition:     0.1s linear;
+          -moz-transition:    0.1s linear;
+          -webkit-transition: 0.1s linear;
+          opacity: 0;
+        }
+        
+        button.send.selected:after {
+          opacity: 1;
+        }
+
+
+        
+        body {
+          background: #f2f2f2;
+          font-family: Lato;
+          -webkit-font-smoothing: antialiased;
+        }
+        
+  /*      div {
+          position: relative;
+          margin: 50px auto;
+          width: 710px;
+          padding: 0;
+          list-style: none;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 900;
+          color: #555;
+	 
+        }*/
+
+        
+        @keyframes unselected {
+          0% { box-shadow: 0 0 0 4px #00c09e; }
+          50% { transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
+        }
+        @-o-keyframes unselected {
+          0% { box-shadow: 0 0 0 4px #00c09e; }
+          50% { -o-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
+        }
+        @-ms-keyframes unselected {
+          0% { box-shadow: 0 0 0 4px #00c09e; }
+          50% { width: 45%; height: 45%; opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
+        }
+        @-moz-transition unselected {
+          0% { box-shadow: 0 0 0 4px #00c09e; }
+          50% { -moz-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
+        }
+        @-webkit-keyframes unselected {
+          0% { box-shadow: 0 0 0 4px #00c09e; }
+          50% { -webkit-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #fff; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #fff; }
+        }
+        
+        li:before {
+          content: "\2714";
+          display: block;
+          position: absolute;
+          margin: auto;
+          top: 0; left: 0; bottom: 0; right: 0;
+          width: 160px;
+          height: 40px;
+          line-height: 40px;
+          background:  #00c09e;
+          border-radius: 50px;
+          color: #fff;
+          text-align: center;
+          font-size: 16px;
+          z-index: 10;
+          opacity: 0;
+  /*        transition:         0.3s linear;
+          -o-transition:      0.3s linear;
+          -ms-transition:     0.3s linear;
+          -moz-transition:    0.3s linear;
+          -webkit-transition: 0.3s linear;*/
+          -o-user-select:      none;
+          -moz-user-select:    none;
+          -webkit-user-select: none;
+          cursor: pointer;
+        }
+
+  
+        
+        /* img selection */
+        
+        ..selected {
+          box-shadow: 0 0 0 4px #00c09e;
+
+        }
+	/* Style the tab buttons */
+.tablink {
+
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+	
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+        /*
+        @keyframes selected {
+          0% { border-color: #fff; }
+          50% { transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
+        }
+        @-o-keyframes selected {
+          0% { box-shadow: 0 0 0 4px #fff; }
+          50% { -o-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
+        }
+        @-ms-keyframes selected {
+          0% { box-shadow: 0 0 0 4px #fff; }
+          50% { width: 45%; height: 45%; opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
+        }
+        @-moz-transition selected {
+          0% { box-shadow: 0 0 0 4px #fff; }
+          50% { -moz-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
+        }
+        @-webkit-keyframes selected {
+          0% { box-shadow: 0 0 0 4px #fff; }
+          50% { -webkit-transform: scale(0.5); opacity: 0.8; box-shadow: 0 0 0 4px #00c09e; }
+          80%,100% { width: 100%; height: 100%; box-shadow: 0 0 0 4px #00c09e; }
+        }
+        */
