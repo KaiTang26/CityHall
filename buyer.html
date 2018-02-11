@@ -16,39 +16,66 @@
       <a class="navbar-brand" href="#">
         <img src="./img/logo.jpg" alt="fishcloud">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <!-- NAV ITEM -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <h3 class="nav-link" href="#">Home <span class="sr-only">(current)</span></h3>
           </li>
-          <li class="nav-item">
-            <h3 class="nav-link" href="#">Profile</h3>
+          <!-- <li class="nav-item">
+            Features
+          </li> -->
+        </ul>
+
+        <h1 id="title">
+          Pre-order
+        </h1>
+
+        <span class="navbar-text">
+          <h3>Profile</h3>
+        </span>
+        <span class="navbar-text">
+          <img id="gordon" src="./img/Gordon.png" alt="buyer picture">
+        </span>
+
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <a class="navbar-brand" href="#">Navbar w/ text</a>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <img class="gordon" src="./img/Gordon.png" alt="buyer photo">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
           </li>
         </ul>
-        <!-- NAV ITEM END -->
 
-        <!-- BUYER IMAGE -->
-        <!-- <ul class="navbar-nav" id="buyer">
-          <div>
-            <li class="nav-item">
-              <img class="gordon" src="./img/Gordon.png" alt="buyer photo">
-            </li>
-          </div>
-        </ul> -->
-        <!-- BUYER IMAGE END -->
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
 
       </div>
     </nav>
     <!-- NAVIGATION BAR END -->
+    <header class ="top">
+    	<img class= "headerPic"  src="./img/logo.jpg" />
 
+            <div id= "tDiv"><h1 id="title">Tag Your Haul</h1></div>
+    	<div id= "fisherfolk">
+
+    		<h2>Fred Baggins</h2>
+    		<img  class= "headerPic"   src="./img/Fred.png" />
+    	</div>
+    </header>
   <body>
 
     <div class="row">
@@ -58,13 +85,11 @@
 
         <!-- CALENDAR'S WEEK/MONTH -->
         <div class="toolbar">
-          <div class="toggle">
-            <div class="toggle__option">week</div>
-            <div class="toggle__option toggle__option--selected">month</div>
+          <div>
+            <div class="time"><h7> 6 AM - 1 PM</h7></div>
           </div>
           <div class="port">
             <h5 style="text-align:center">Port 51</h5>
-            <h7>6 AM - 1 PM</h7>
           </div>
           <div class="current-month">February 2018</div>
         </div>
