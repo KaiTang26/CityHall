@@ -89,7 +89,8 @@ top: auto;
         margin: auto;
         font-weight: 700;
         font-size: 15px;
-        color: #fff;
+        color: white;
+	background-color: #555;
 }
 
 /* Control the left side */
@@ -163,7 +164,7 @@ position: relative;
   box-shadow: 0 0 0 4px #00c09e;
 }
 
-        /* button 
+   
         
         button {
 
@@ -176,7 +177,7 @@ position: relative;
           text-transform: uppercase;
           outline: 0;
 		
-        }*/
+        }
         
         button.select {
 	border: 0;
@@ -187,7 +188,7 @@ position: relative;
         }
         
         button.select:before, button.select:after {
-  /*        position: absolute;
+          position: absolute;
           display: block;
           content:  'select all';
           width: 150px;
