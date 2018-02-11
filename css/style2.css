@@ -17,8 +17,12 @@ nav{
 }
 
 .navbar-brand > img{
-  height:50px;
+  height:80px;
   margin-top:0;
+}
+
+a.nav-link{
+
 }
 /* WRAPPER */
 .headerPic{
@@ -41,11 +45,28 @@ nav{
     width: 460px;
     position: fixed;
     z-index: 1;
-    top: 70px;
+    top: 100px;
     left: 10px;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
+}
+
+.navbar-nav{
+  float: right;
+}
+
+ul{
+  float: right;
+}
+
+#name{
+  float:right;
+}
+
+.gordon{
+  width:60px;
+  margin-top:0;
 }
 
 .wrapper {
@@ -90,13 +111,14 @@ img{
 }
 
 .table{
-  margin-top:75px;
+  margin-top:100px;
 }
 
 .table td, .table th {
     padding: .75rem;
     vertical-align: inherit;
     border-top: 1px solid #dee2e6;
+    font-size: 22px;
 }
 th.fisherpic{
   text-align: center;
@@ -119,6 +141,10 @@ sidebar {
                        "copyright menu avatar";
 }
 
+.btn-primary{
+  background-color: #156e96;
+}
+
 .button-position{
   float: right;
   margin-right: 0.75rem;
@@ -130,9 +156,7 @@ sidebar {
   align-items: center;
   justify-content: center;
 }
-.copyright {
-  text-align: center;
-}
+
 .avatar {
   grid-area: avatar;
   display: flex;
@@ -148,20 +172,8 @@ sidebar {
   display: block;
 }
 
-.copyright {
-  grid-area: copyright;
-}
-.menu {
-  grid-area: menu;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
 .logo {
   grid-area: logo;
-}
-.menu__text {
-  display: none;
 }
 
 @media screen and (min-width: 850px) {
@@ -193,16 +205,13 @@ sidebar {
   }
 }
 
-
-
-
-/* MAIN */
+/* CALENDAR */
 
 .toolbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 .calendar{}
 
@@ -225,9 +234,6 @@ sidebar {
 .calendar__day {
   padding: 16px;
 }
-
-
-
 
 /* COSMETIC STYLING */
 
@@ -322,7 +328,7 @@ main {
   grid-template-columns: 1fr 1fr;
 
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.7em;
 }
 .toggle__option{
   padding: 16px;
