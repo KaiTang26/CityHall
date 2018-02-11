@@ -12,6 +12,10 @@ nav{
   position: fixed;
 }
 
+#navbarNav{
+  float: right;
+}
+
 .fixed-top{
   background-color: #156e96;
 }
@@ -19,6 +23,7 @@ nav{
 .navbar-brand > img{
   height:80px;
   margin-top:0;
+  margin-right:0;
 }
 
 a.nav-link{
@@ -30,15 +35,31 @@ a.nav-link{
 	width: auto;
 	float: left;
 	border-radius: 100%;
-  margin-left: 10%;
-  margin-top: 10%;
 }
-
 #title{
-	float: left;
+
 	padding-left: 5%;
 	color: white;
-	font-size: 40px;
+  margin-right:35%;
+}
+
+#fisherfolk{
+	height: 100px;
+	width: auto;
+	float: right;
+	padding-right: 8%;
+}
+#fisherfolk img{
+	float: left;
+	margin-left: 20px;
+	margin-top: 12px;
+
+}
+#fisherfolk h2{
+	float: left;
+	text-align: auto;
+	color: white;
+	padding: 15px 20px;
 }
 
 .sidenav {
@@ -56,6 +77,9 @@ a.nav-link{
   float: right;
 }
 
+.time{
+  margin-left: 10%;
+}
 ul{
   float: right;
 }
@@ -64,9 +88,10 @@ ul{
   float:right;
 }
 
-.gordon{
+#gordon{
   width:60px;
   margin-top:0;
+  margin-left:15%;
 }
 
 .wrapper {
@@ -111,7 +136,7 @@ img{
 }
 
 .table{
-  margin-top:100px;
+  margin-top:50px;
 }
 
 .table td, .table th {
