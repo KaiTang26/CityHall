@@ -41,6 +41,10 @@
 	margin-bottom: 25px;
 }
 
+.current-month{
+  margin-right:0.75rem;  
+}
+
 img{
   border-radius: 50%;
   margin-top:25%;
@@ -79,6 +83,13 @@ sidebar {
   grid-template-areas: "logo menu avatar"
                        "copyright menu avatar";
 }
+
+.button-position{
+  float: right;
+  margin-right: 0.75rem;
+  margin-bottom: 2rem;
+}
+
 .logo {
   display: flex;
   align-items: center;
