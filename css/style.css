@@ -47,16 +47,23 @@
 
 .fish {
   height: 70px;
+  font-size:12px;
 }
 
 .threatened {
-  box-shadow: 0 0 0 4px red;
+  box-shadow: 0 0 0 4px yellow;
 }
 
 .extirpated {
-  box-shadow: 0 0 0 4px blue;
+  box-shadow: 0 0 0 4px black;
 }
 
 .endangered {
+  box-shadow: 0 0 0 4px red;
+}
+.normal{
   box-shadow: 0 0 0 4px #00c09e;
+}
+.rowFish{
+	
 }
