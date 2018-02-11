@@ -4,13 +4,44 @@
  */
 
 
+header{
+  position: fixed;
+}
+
+nav{
+  position: fixed;
+}
+
+.fixed-top{
+  background-color: #156e96;
+}
+
+.navbar-brand > img{
+  height:50px;
+  margin-top:0;
+}
 /* WRAPPER */
+.headerPic{
+	height: 80px;
+	width: auto;
+	float: left;
+	border-radius: 100%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+#title{
+	float: left;
+	padding-left: 5%;
+	color: white;
+	font-size: 40px;
+}
 
 .sidenav {
     width: 460px;
     position: fixed;
     z-index: 1;
-    top: 20px;
+    top: 70px;
     left: 10px;
     background: #eee;
     overflow-x: hidden;
@@ -42,7 +73,7 @@
 }
 
 .current-month{
-  margin-right:0.75rem;  
+  margin-right:0.75rem;
 }
 
 img{
@@ -56,6 +87,10 @@ img{
     grid-template-rows: 1fr;
     grid-template-areas: "sidebar content";
   }
+}
+
+.table{
+  margin-top:75px;
 }
 
 .table td, .table th {
