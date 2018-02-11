@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/leonard/pen/foiHb" />
 
@@ -42,45 +43,68 @@
      
 
       <ul class = "fishList">
-
-	<li class="fish normal"><img class="fishImg"  src="./img/Atlantic Cod.jpg" />
-		<span class="caption">Atlantic Cod</span>
+	
+	<li class="fish"><img class="fishImg normal"  src="./img/Atlantic Cod.jpg" />
+		<span class="caption">Atlantic Cod</span><div class="input-group">
+                                <input type="text" class="quantity form-control">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">kg</span>
+                                </div>
+                              </div>
 	</li>
-	<li class="fish normal"><img class="fishImg"  src="./img/Blue-tilapia.png" />
-		<span class="caption">Blue Tilapia</span>
+	<li class="fish"><img class="fishImg normal"  src="./img/Blue-tilapia.png" />
+		<span class="caption">Blue Tilapia</span><div class="input-group">
+                                <input type="text" class="quantity form-control">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">kg</span>
+                                </div>
+                              </div>
 	</li>
-
-	<li class="fish normal"><img class="fishImg"  src="./img/Chum Salmon.jpg" />
+	<div >
+	<li class="fish"><img class="fishImg normal"  src="./img/Chum Salmon.jpg" />
 		<span class="caption">Chum Salmon </span>
+                              <div class="input-group">
+                                <input type="text" class="quantity form-control">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">kg</span>
+                                </div>
+                              </div>
 
 	</li>
-	<li class="fish normal"><img class="fishImg"  src="./img/dolly varden.jpg" />
-		<span class="caption">Dolly Varden</span>
+	</div>
+	<li class="fish"><img class="fishImg normal"  src="./img/dolly varden.jpg" />
+		<span class="caption">Dolly Varden</span><div class="input-group">
+                                <input type="text" class="quantity form-control">
+                                <div class="input-group-append">
+                                  <span class="input-group-text">kg</span>
+                                </div>
+                              </div>
 	</li>
-        <li class="fish threatened"><img class="fishImg" src="./img/Atlantic Wolffish.jpg" />
+        <li class="fish"><img class="fishImg threatened" src="./img/Atlantic Wolffish.jpg" />
 		<span class="caption">Atlantic Wolffish</span></li>
-        <li class="fish threatened"><img class="fishImg" src="./img/Shorthead Sculpin.jpg" />
+
+        <li class="fish"><img class="fishImg threatened" src="./img/Shorthead Sculpin.jpg" />
 		<span class="caption">Shorthead Sculpin</span></li>
-        <li class="fish threatened" ><img class="fishImg" src="./img/Spotted Wolffish.jpg" />
+        <li class="fish" ><img class="fishImg threatened" src="./img/Spotted Wolffish.jpg" />
 		<span class="caption">Spotted Wolffish</span></li>
 
-	<li class="fish endangered"><img class="fishImg" src="./img/Atlantic Salmon.jpg" />
+	<li class="fish"><img class="fishImg endangered" src="./img/Atlantic Salmon.jpg" />
 		<span class="caption">Atlantic Salmon</span>
 	</li>
-        <li class="fish endangered"><img class="fishImg" src="./img/AtlanticWhitefish.jpg" />
+        <li class="fish"><img class="fishImg  endangered" src="./img/AtlanticWhitefish.jpg" />
 		<span class="caption">Atlantic Whitefish</span></li>
-        <li class="fish endangered"><img class="fishImg"  src="./img/AuroraTrout.jpg" />
+        <li class="fish"><img class="fishImg  endangered"  src="./img/AuroraTrout.jpg" />
 		<span class="caption">Aurora Trout</span></li>
-       <li class="fish endangered"><img class="fishImg"  src="./img/CopperRedhorse.jpg" />
+       <li class="fish"><img class="fishImg  endangered"  src="./img/CopperRedhorse.jpg" />
 <span class="caption">Copper Redhorse</span></li>
 
-	<li class="fish endangered"><img class="fishImg"  src="./img/Nooksack Dace.jpg" />
+	<li class="fish"><img class="fishImg  endangered"  src="./img/Nooksack Dace.jpg" />
 <span class="caption">Nooksack Dace</span></li>
-        <li class="fish endangered"><img class="fishImg"  src="./img/NorthernMadtom.jpg" />
+        <li class="fish"><img class="fishImg  endangered"  src="./img/NorthernMadtom.jpg" />
 <span class="caption">Northern Madtom</span></li>
-        <li class="fish endangered"><img class="fishImg"  src="./img/SalishSucker.jpg" />
+        <li class="fish"><img class="fishImg  endangered"  src="./img/SalishSucker.jpg" />
 <span class="caption">Salish Sucker</span></li>
-        <li class="fish endangered"><img class="fishImg"  src="./img/Shortnose Cisco.jpg" />
+        <li class="fish"><img class="fishImg  endangered"  src="./img/Shortnose Cisco.jpg" />
 <span class="caption">Shortnose Cisco</span></li>
 
       </ul>
@@ -112,14 +136,7 @@
         counter();
 	quantity();      
 	});
-  /*    function quantity() {
-    var x = document.getElementById("moo");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-} */
+
       // number of selected items
       function counter() {
         if ($('li.selected').length > 0)
