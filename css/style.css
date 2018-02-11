@@ -10,7 +10,8 @@
 	float: left;
 	padding-left: 5%;
 	color: white;	
-	font-size: 40px;	
+	font-size: 40px;
+	padding-top:20px;	
 }
 
 #fisherfolk{
@@ -29,7 +30,7 @@
 	float: left;
 	text-align: auto;
 	color: white;	
-	padding: 15px 20px;
+	padding: 25px 20px;
 }
 .top{
 	top: 0;
@@ -74,13 +75,9 @@ top: auto;
 .submitTag{
 	display: block;
 	margin: auto;
-	height:20%;
-  	width: 50%;
-	font-size: 45px; 
 	font-weight: bold;
 	color: white;
 	background-color: #00c09e;
-	border-radius: 20%;
 }
 .send.selected {
           background: #00c09e;
@@ -135,6 +132,7 @@ top: auto;
 	height: 70px;
 	width: auto;
 	border: 10px;
+	margin-bottom: 2px;
 }
 .caption {
     display: block;
