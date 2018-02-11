@@ -194,7 +194,7 @@ position: relative;
 
         
         .send:after {
-          position: auto;ul
+          position: auto;
           content:  attr(data-counter);
           padding: 5px 8px;
           margin: -29px 0 0 0px;
